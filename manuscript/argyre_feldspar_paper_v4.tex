@@ -1,0 +1,477 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{textcomp} % For micro symbol
+
+% Fix for Unicode symbols
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}
+
+% Define extended data table and figure environments
+\newcommand{\extendeddatafigure}[2]{
+    \begin{figure}[H]
+        \centering
+        \caption*{\textbf{Extended Data Figure #1:} #2}
+        \includegraphics[width=\textwidth]{figures/S1_hirise_morphologies.png}
+    \end{figure}
+}
+
+\newcommand{\extendeddatatable}[2]{
+    \begin{table}[H]
+        \centering
+        \caption*{\textbf{Extended Data Table #1:} #2}
+        \input{extended_data/ED_Table1_categorized_summary.csv}
+    \end{table}
+}
+
+\title{\textbf{Ancient Anorthositic Complexes: Widespread in Lower Martian Crust}}
+\author{Michael S. Phillips\textsuperscript{1}\\ 
+Christina E. Viviano\textsuperscript{2}\\
+A. Deanne Rogers\textsuperscript{3}\\
+Linae Larson\textsuperscript{1}\\
+Livio Tornabene\textsuperscript{4}\\
+Alexander Trowbridge\textsuperscript{5}\\
+Jeffrey E. Moersch\textsuperscript{6}\\
+Harry Y. McSween Jr.\textsuperscript{6}}
+
+\begin{document}
+
+\maketitle
+
+\begin{flushleft}
+\textsuperscript{1}Lunar and Planetary Laboratory, University of Arizona, Tucson, AZ, USA.\\
+\textsuperscript{2}Johns Hopkins University Applied Physics Laboratory, Laurel, MD, USA.\\
+\textsuperscript{3}Department of Geosciences, Stony Brook University, Stony Brook, NY, USA.\\
+\textsuperscript{4}Department of Earth and Environmental Sciences, University of Waterloo, Waterloo, ON, Canada.\\
+\textsuperscript{5}Department of Earth Sciences, Western University, London, ON, Canada.\\
+\textsuperscript{6}Department of Earth and Planetary Sciences, University of Tennessee, Knoxville, TN, USA.\\
+\end{flushleft}
+
+\newpage
+\section*{Abstract}
+\setlength{\parindent}{0em} % Set the paragraph indentation to 1em
+\setlength{\parskip}{6pt}   % Remove extra spacing between paragraphs
+We report extensive detections of feldspathic, possibly anorthositic, lithologies within outcrops uplifted by the Argyre basin-forming impact on Mars. The radial position of feldspathic outcrops indicates they are stratigraphically above olivine-bearing material and below low-calcium pyroxene-bearing rocks, which suggests that feldspathic lithologies are present in the lower martian crust in the circum-Argyre region. This stratigraphy bears striking resemblance to that observed at the Hellas basin rim and indicates that feldspathic rocks could be pervasive within the lower crust across the entire southern highlands of Mars. These results are consistent with evidence from geophysical data suggesting a lower-density lower crust, but likely not sufficient to fully explain the expected lower density. Importantly, these feldspathic rocks are present alongside pyroxene- and olivine-bearing units, a suite of compositions commonly associated with layered mafic intrusions (LMI). We suggest that a process early in Mars' history produced large volumes of melt that cooled slowly to form LMI-like complexes and that these complexes represent primary martian crust. The melt-producing process ostensibly affected the whole southern hemisphere, and possibly the globe. These observations offer direct evidence to support and refine existing models of early crust formation, addressing key questions regarding crustal density variations and formation mechanisms that have previously lacked widespread observational constraints.
+
+\section*{Main}
+
+In contrast to Earth and Venus, Mars preserves a surface rock record dating back to $\sim$4.55 Ga \citep{Humayun2013, Kruijer2020}. The preservation of ancient rocks ($\geq$4.1 Ga, pre-Noachian) at the surface provides a unique opportunity to study early crustal formation through remote sensing. Understanding how and when evolved rocks first formed on terrestrial planets remains a major open question in planetary geology. Since the processes that formed Mars' primary crust share more similarities with Earth- and Venus-sized bodies than with lunar-sized bodies \citep{Elkins-Tanton2012}, studying the oldest Martian crust provides critical insights into early crustal evolution across terrestrial planets.
+
+Noteworthy among the ancient rocks of Mars are compositions apparently dominated by plagioclase feldspar (Fig. 1). Ancient feldspathic and silicic rocks provide clear evidence that crustal differentiation occurred early in Mars' history \citep[e.g.,][]{Stolper2013, Sautter2015}, although the mechanism was likely fractional crystallization of basaltic magmas rather than plate-tectonic processes that form continental crust on Earth \citep{Udry2018}. Whether such differentiation occurred only at isolated locations or globally is an open question. Here, we present evidence for a widespread, plagioclase-rich component to the lower martian crust that likely spans the entire southern highlands. Our results suggest a hemispheric, if not global, process that resulted in differentiated magmas over $\sim$4.1 billion years ago on Mars.
+
+While increasingly recognized as important constituents of the Martian crust, feldspathic rocks are relatively rare compared to basaltic materials based on orbital observations \citep{McSween2009, McSween2015, McSween2023}. Many detections of plagioclase-rich compositions come from isolated exposures in Noachian and older terrains in the southern highlands, interpreted as possible intrusive bodies \citep{Quantin2012, Carter2013, Wray2013, Sautter2016, Payre2022}. Other plagioclase-rich occurrences are linked to likely volcanic units found in Hesperian-aged terrains, such as Syrtis Major \citep{Eggers2021}, western Arcadia Planitia \citep{Farrand2021, Rogers2022}, and the Eridania basin \citep{Michalski2023}.
+
+Other studies have revealed more extensive occurrences of plagioclase-rich outcrops. \citet{Phillips2022} identified widespread plagioclase-rich outcrops across the northern rim of the Hellas basin. \citet{Viviano-Beck2017} initially reported, and \citet{Flahaut2023} later corroborated, the presence of extensive plagioclase-rich compositions in the lower walls of Valles Marineris. The Valles Marineris exposures are plausibly Noachian or older, and while some evidence suggests they could be effusive volcanic rocks \citep{Flahaut2023}, their origins remain uncertain and could alternatively be explained as sills or other hypabyssal intrusions. Additionally, nine feldspar-rich sites were identified in the Terra Sirenum/Cimmeria region by \citet{Payre2022}, an area with anomalous geochemical and magnetic signatures and suggested to be an ancient crustal block \citep{Bouley2020}. Therefore, while plagioclase-rich rocks are found across the southern highlands of Mars, it appears that a diversity of petrogenetic processes--including plutonic and volcanic activity, and possibly impact-related processes \citep{Grieve1991, Hurwitz2014, Vaughan2014, Koeppel2020}--have contributed to their formation from the pre-Noachian through the early Hesperian Epochs. This work focuses on the most ancient (pre-Noachian) plagioclase-rich outcrops.
+
+The lower crust of Mars has been hypothesized to be feldspar-rich to explain its apparent low density based on geochemical and geophysical data \citep{Baratoux2014, Goossens2017, Knapmeyer-Endrun2021}. Despite the growing number of observations of plagioclase-rich rocks, it remains unclear from surface remote-sensing observations whether a lower-crust plagioclase-rich component is present globally. Here, we report results from an investigation into outcrops uplifted from depth by the Argyre basin-forming impact to test the hypothesis that the martian crust contains a global feldspathic component. We find that plagioclase-rich outcrops are ubiquitous in Argyre-uplift materials, supporting the hypothesis that these materials are widespread in the lower martian crust.
+
+\subsection*{Plagioclase-rich outcrops sandwiched between mantle and upper crust}
+
+We investigated the composition of uplifted material surrounding Argyre using $\sim$180 m/pixel, 72-band multispectral mapping data (MRDRv4, \citealt{Seelos2023}) from the Compact Reconnaissance Imaging Spectrometer for Mars (CRISM) instrument onboard the Mars Reconnaissance Orbiter \citep{Murchie2007}. Reflectance spectroscopy is a useful tool for identifying many silicate minerals, including major rock-forming minerals such as olivine, pyroxene, Fe-bearing plagioclase, and oxides \citep{Adams1967, Adams1968, Clark1984}.
+
+We examined 40 CRISM MRDR tiles (Extended Data Table 1) for the presence of primary rock forming silicate minerals. Of the 1257 outcrops identified, 447 were olivine + high-calcium pyroxene (HCP), 180 were type 1 olivine, 233 were type 2 olivine, 270 were low-calcium pyroxene (LCP), and 127 were plagioclase (Fig. 2; see Methods for details on spectral categorization).
+
+The emplacement mechanism of uplifted massifs resulting from basin-forming impacts, such as the one that formed Argyre, is primarily attributed to structural uplift. Structural uplift refers to the combined effects of isostatic rebound and crustal thinning from transient crater formation, which leads to an extensional tectonic regime that causes normal faulting. The relative stratigraphy of material uplifted this way would be preserved (with some disruption) as opposed to the inverted stratigraphy expected within an ejecta blanket. Outcrops closer to the basin center would thus be stratigraphically below those further from the basin center. The distance of each outcrop from the basin center is used as a proxy for pre-uplift stratigraphy.
+
+Olivine-bearing units dominate the compositions within approximately 800 km of the Argyre basin center (Fig. 2). It is possible that some of these olivine-bearing compositions represent uplifted mantle material \citep{Koeppen2008, Ody2013}. Olivine plus HCP outcrops are common low along the rim where possible mantle material is expected, raising the possibility of wehrlite/lherzolite in the upper martian mantle \citep{McGetchin1978, Treiman2025, Bernadet2025}. Beyond 800 km, LCP becomes the most abundant mineral category. The position of LCP-dominated compositions is suggestive of upper pre-Noachian crust \citep{Buczkowski2010, McNeil2025}.
+
+Plagioclase detections are concentrated between $\sim$330 and 890 km from the basin center and are absent beyond 890 km. The highest relative proportion of plagioclase ($\sim$29\%) occurs between 430 and 470 km from the basin center. The overall pattern revealed by the distribution of mineral categories with radial distance (Fig. 2) suggests a clear transition from compositions dominated by olivine at lower stratigraphic positions to those dominated by LCP in the upper stratigraphic positions. This transition occurs between $\sim$450 and 810 km distance from the Argyre basin center. Plagioclase-rich rocks appear to be positioned in the lower crust between the stratigraphically lower olivine-bearing rocks, some of which may represent mantle materials, and the stratigraphically higher LCP-bearing rocks, which may represent pre-Argyre upper crust.
+
+\subsection*{Local contexts, visual appearance and color analysis}
+
+Three general categories for outcrops, when considering their local geomorphological context, were identified: massifs, crater-rims, and valley walls. Circum-Argyre massifs are the principal target of interest for our study because they directly represent pre-Argyre rocks excavated by the impact process. We include crater-rim outcrops in our analysis because impacts on the Argyre rim could uplift material that was originally uplifted by Argyre. Exposures within valley walls are also of interest because valleys cut into the circum-Argyre material and thereby expose buried rock.
+
+Plagioclase-rich outcrops on massifs typically appear as light-toned, ridge-like capping units overlying other mineral detections even within the same massifs (Extended Data Figs. 1 and 2). Notably, many of these plagioclase-rich outcrops exhibit massive, homogeneous light-toned appearances that resemble terrestrial massif anorthosites rather than the more distinctly layered appearance typical of layered mafic intrusions (Fig. 1, Extended Data Fig. 1; \citealt{Ashwal1993}). Massive textured outcrops also appear as rounded or angular blocks (Extended Data Fig. 1) reminiscent of the ``mega breccia'' reported in the circum-Isidis region by \citet{Scheller2020}; however, the ``mega breccia'' along the Argyre rim are larger in scale. Thermal Emission Imaging System (THEMIS; \citealt{Christensen2004}) thermal inertia \citep{Fergason2006} and nighttime infrared data \citep{Edwards2011} over massif outcrops indicate high thermal inertia values relative to surrounding units, suggesting they are well-consolidated exposures rather than loose, unconsolidated materials.
+
+Plagioclase outcrops associated with craters are found exclusively on crater rims, not within crater floors, suggesting they represent uplifted material rather than later volcanic or sedimentary infill or local differentiated impact melt or breccias. Valley walls primarily expose material in the outer regions of the Argyre rim. While LCP dominates these exposures, plagioclase and olivine are detected in valleys lower down on the rim, consistent with the overall stratigraphic relationship observed in the region.
+
+Analysis of HiRISE infrared, red, blue-green (IRB) color data reveal that plagioclase-rich outcrops consistently appear as higher reflectance, light-toned materials relative to surrounding terrain (Fig. 1, Extended Data Figs. 1, 3 and 4). Dark subtraction methods \citep{Tornabene2018} were applied to three HiRISE images (ESP\_020799\_1385, ESP\_031269\_1395, and ESP\_069064\_1390) to remove additive atmospheric residuals in the data and asses the colors associated with CRISM-identified compositions. Outcrops categorized as plagioclase with CRISM show higher IR/BG and IR/Red band ratio values than neighboring mafic outcrops (Extended Data Fig. 3), attributable to an absorption feature present with LCP and olivine but not present with plagioclase that overlaps with the HiRISE IR channel (centered at $\sim$900 nm). Light-toned outcrops that were either too small to be resolved by CRISM MRDR data or not covered by the data were also investigated with HiRISE color parameters and show the same relative trend among light- and dark-toned material within the same scene (Extended Data Figs. 3 and 4), which suggests the CRISM-based detections of plagioclase-rich outcrops are a minimum estimate of the total abundance of such outcrops in the circum-Argyre region.
+
+The spatial relationships of neighboring outcrops (defined here as outcrops within 5-km distance of one another) were assessed using a graph network analysis to understand patterns in local associations and relative elevations (Extended Data Fig. 2). The most common neighbor of plagioclase-bearing outcrops are other plagioclase-bearing outcrops (23 counts), followed by type 1 olivine and LCP (21 and 20 counts each), type 2 olivine (14 counts), and olivine + HCP (9 counts). The relative elevations of neighboring outcrops indicate that plagioclase-bearing units are generally found at higher elevations than their (non-plagioclase) neighbors. The proximal relationships indicate a spatial association among plagioclase, LCP and olivine (that is, these compositions often appear on or near the same massifs) and that plagioclase is locally higher in elevation than its neighboring olivine and LCP (Extended Data Fig. 2).
+
+\subsection*{Possible lithology of plagioclase-bearing outcrops}
+
+The plagioclase-rich outcrops are characterized by a broad absorption feature centered around 1.25 μm, indicative of Fe$^{2+}$-bearing plagioclase feldspar \citep{Adams1967, Adams1973, Adams1978}. This spectral signature is observed if plagioclase is the dominant mineral visible at the surface; small amounts ($\sim$15\%) of mafic minerals like pyroxene or olivine can mask the plagioclase absorption feature \citep{Crown1987, Pompilio2007, Serventi2013, Serventi2015, Cheek2014}. However, specific, grain-size dependent, combinations of plagioclase with other minerals can also yield a reflectance spectrum dominated by the 1.25-µm absorption feature of plagioclase (``spectrally feldspathic'' rocks), which means the 1.25-µm feature of Fe-plagioclase is not sufficient to classify the lithology of the host rock \citep{Rogers2015, Barthez2023, Vannier2024}. Supplementary Note 1 of \citet{Phillips2022} presents a full discussion of this topic.
+
+THEMIS thermal infrared data provide additional constraints on the composition of spectrally feldspathic outcrops. We assessed nine plagioclase outcrops across four THEMIS scenes (Extended Data Table 2; see Methods for details on processing) as well as 23 type 1 olivine, 15 type 2 olivine, 50 HCP + olivine, and 19 LCP outcrops within the same THEMIS scenes. Two metrics that track the silica content of target lithologies were calculated: the weighted absorption center (WAC; \citealt{Smith2013, Amador2016}) and cubic spline fit minimum (CSFM; \citealt{Rogers2015}). Plagioclase-bearing outcrops show WAC values ranging from $\sim$9.9 -- 10.2 μm with a 10.1 µm median and CSFM values ranging from $\sim$9.3 -- 11.0 with a median of $\sim$9.5 µm. Plotting WAC versus CSFM further elucidates the spectral character of the outcrops. Fig. 3 shows WAC vs. CSFM for THEMIS observations compared to reference spectral library data of felsic, intermediate, mafic, ultramafic, anorthositic and gabbroic rocks. The THEMIS data for plagioclase-bearing outcrops align with intermediate, gabbroic, and anorthositic compositions, but not with felsic compositions.
+
+The reflectance and thermal infrared spectral characteristics of plagioclase-bearing outcrops, their close spatial association with pyroxene and olivine outcrops, higher position compared to olivine and pyroxene in local contexts, and the dark and light-toned layering observed within individual plagioclase-bearing units are consistent with a differentiated magmatic complex. The preferred interpretation of these rocks is that they represent layered mafic intrusion (LMI) style complexes. Anorthositic layers in LMIs form through fractional crystallization and flotation of plagioclase in a cooling, typically hypabyssal, mafic magma body \citep{Ashwal1993}. However, we cannot completely rule out contributions from previous impact-basin melt bodies, which may also undergo differentiation, concentrate minerals and form cumulate rocks akin to LMI. The modest percentage of plagioclase-rich outcrops at any radial distance from Argyre (IQR = 1.3 -- 7.1\% of total detections at distances where plagioclase is present) is consistent with the typical proportion of anorthositic components in terrestrial LMIs \citep{Ashwal1993, Ashwal2021}.
+
+Alternatively, the light-toned, massive appearance of many plagioclase-rich outcrops in the Argyre region could be interpreted as evidence for massif-type anorthosites \citep{Ashwal1993, Arndt2013, Keller2024}. Massif-type anorthosites on Earth are distinct from anorthosite formation as layers in LMIs. Terrestrial massif-type anorthosites form large, relatively homogeneous bodies that can extend over thousands of square kilometers, whereas anorthositic components of LMIs typically form discrete layers that can be hundreds of kilometers in extent (e.g., Bushveld Complex, \citealt{Latypov2020}) and kilometers thick (e.g., Mineral Lake intrusion, Wisconsin; \citealt{Ashwal1993}). Hypotheses for massif-type anorthosite formation involve an elevated crustal temperature gradient, extensive, long-lived mafic magmas, and density-driven extraction and ascent of plagioclase crystal mushes \citep{Emslie1994, Keller2024}. The tectonic setting for massif-type anorthosites is rifting at a prior convergent zone, a setting unlikely for Mars, and the associated rock types are mangerite (feldspar and orthopyroxene), charnockite (quartz, feldspar, and orthopyroxene), and granitoids \citep{Emslie1994, Hamilton2010, Arndt2013, Keller2024}. This suite of rocks, referred to as AMCG, are not observed in the circum-Argyre region, further leading us to favor differentiation from basaltic melts into LMI-style intrusions over a massif-type anorthosite interpretation for the observations.
+
+\subsection*{Hypotheses for the origin of the stratigraphy exposed at the Argyre rim}
+
+The observed mineralogical distribution around the Argyre basin provides insight into the nature and origin of Mars' earliest crust. The striking similarities between plagioclase-rich outcrops exposed at both Argyre and Hellas basins---separated by over 4,000 km---suggest they represent the same component of the lower Martian crust. The spatial extent indicates these compositions are prevalent beneath much of the southern highlands, if not globally. Spectral, morphological, and contextual characteristics of these outcrops are consistent across both regions, including their association with olivine and pyroxene-bearing units, their light-toned appearance, presence of both layered and massive textures, and their relative stratigraphic position along the basin rims. The creation of such a widespread and compositionally consistent crustal component implies vast volumes of magma derived from a similar source. We favor two scenarios that could explain the generation of such enormous melt volumes across the southern hemisphere: 1) overturn of a post-magma-ocean cumulate pile \citep{Borg2003, Elkins-Tanton2005}; 2) melt and magma generation from basin-forming and/or frequent impacts \citep{Koeppel2020, Manske2021, Black2024}. A third alternative explanation is partial melting of the southern hemisphere's lower crust \citep{BonnetGibet2025, Bernadet2025}.
+
+\subsubsection*{Magma Ocean and Mantle Processes.} 
+
+A whole mantle magma ocean would have formed a gravitationally unstable cumulate mantle with Mg-rich cumulates below Fe-rich cumulates \citep{Elkins-Tanton2005}. Subsequent mantle overturn would have generated large volumes of melt through decompression. These melts would have ascended and cooled slowly in the crust, consistent with formation of differentiated igneous complexes through fractional crystallization. A degree-one overturn geometry \citep{Borg2003, Elkins-Tanton2005, Debaille2008} would have resulted in similar crustal compositions across the southern hemisphere, which more easily explains our observations than a higher degree overturn geometry \citep{Scheinberg2014} that would have produced spatially variable crustal compositions across the southern highlands.
+
+\subsubsection*{Impact Melt Differentiation.} 
+
+An alternative hypothesis involves the differentiation of a single massive, or many overlapping, impact melt sheet(s). The Borealis basin-forming impact, which is a leading hypothesis for the creation of Mars' crustal dichotomy \citep{Don1984, Andrews-Hanna2008, Marinova2008, Nimmo2008}, would have generated an enormous volume of melt. Differentiation of this melt sheet would have produced anorthositic rocks through plagioclase flotation \citep{Koeppel2020, Manske2021}. These materials could have later been uplifted by the Argyre impact. This scenario is particularly intriguing given that the impact melt is expected to concentrate primarily within the impact basin \citep{Marinova2008, Ballantyne2023} and the feldspathic outcrops are found in the southern hemisphere. This raises the possibility that if a large impact formed the crustal dichotomy, it may have impacted the southern hemisphere rather than the northern \citep{Reese2010, Golabek2011, Leone2014, Ballantyne2023, Cheng2024}, creating a localized magma ocean in the southern hemisphere.
+
+The cumulative effect of high frequency bombardment of early Mars would likely have created massive volumes of melt (both impact melt and crustal partial melts) even in the absence of a single, large, dichotomy-forming impact \citep{Koeppel2020, Manske2021, Black2024}. The expected fate of such melts is ascent to a depth of neutral buoyancy in the crust, contributing to a compositional stratification of the early crust \citep{Black2024}. Additionally, differentiation of surface melts could contribute to smaller scale compositional layering \citep{Koeppel2020}.
+
+\subsubsection*{Crustal Melting.} 
+
+A third possibility is that evolved compositions formed through partial melting of potentially hydrothermally altered mafic crust \citep{BonnetGibet2025, Bernadet2025}. We disfavor this scenario as an explanation for the pre-Noachian feldspathic crust because silicic (i.e., felsic) rocks would be the expected product of the partial melting---compositions not observed in this study.
+
+Two plausible scenarios for crustal melting have recently been proposed. The first involves crustal thickness differences between Martian hemispheres. In the southern highlands, where crust is thicker, higher concentrations of heat-producing elements create steeper temperature gradients. This thermal insulation, combined with thinner lithosphere and higher mantle melt fractions beneath these regions, enhances temperatures at the crustal base, promoting partial melting at depths up to approximately 15 km \citep{BonnetGibet2022, BonnetGibet2025}. The resulting evolved magmas would ascend, potentially undergo assimilation and fractional crystallization, and crystallize at various crustal depths---a process sharing characteristics with silicic rock formation in Iceland \citep{Jonasson2007, Martin2007, Martin2010}.
+
+The second mechanism involves interaction between basaltic melts and serpentinized primordial crust \citep{Bernadet2025}, plausible for early Mars given evidence for widespread alteration \citep{Bibring2006, Bishop2008, Ehlmann2009, Ehlmann2014, Wordsworth2017, Viviano2023, Carter2023, Royer2024} and the possibility of a dense steam atmosphere persisting for several million years post-accretion \citep{Abe2011, Scherf2020}. In this model, water both enables serpentinization of ultramafic protocrust and significantly lowers rock melting temperatures. Thermodynamic modeling indicates a minimum water content of $\sim$100 ppm in the bulk silicate Mars would be necessary. Through shallow ($<$15 km) fluid-assisted reactions between serpentinite and basaltic melts, felsic compositions could form. Models suggest this process might generate up to $\sim$40\% of Martian felsic crust, particularly during two periods: very early Martian history (4.4-4.5 Ga) and during the Hesperian Epoch \citep{Bernadet2025}.
+
+However, the spectral characteristics of our detections are more consistent with intermediate/gabbroic/anorthositic rocks than with silicic/felsic compositions. While partial melting of possibly hydrated crust may explain some Hesperian-aged spectrally feldspathic detections \citep{Farrand2021, Rogers2022, Michalski2023}, it seems less applicable to the pre-Noachian compositions presented here. For the few silicic rocks encountered on Mars, fractional crystallization of basaltic magmas may better explain their formation than hydrous crustal melting \citep{Udry2018}.
+
+The presence of Fe$^{2+}$ in plagioclase, which enables its spectral identification, provides additional petrogenetic information. Fe$^{2+}$ incorporation into plagioclase is enhanced under reducing conditions, with high melt polymerization (viz., higher SiO$^2$), low water activity, high Fe$^{Tot}$/Al$_{2}$O$_{3}$, and in high temperature melts that rapidly ascend to cool at low pressures \citep{Wenk1973, Longhi1976, Smith1988, Phinney1992, Ashwal1993, Lundgaard2004}. While the presence of Fe$^{2+}$ in plagioclase is not diagnostic of the petrogenetic environment, dry, high temperature, rapidly ascending melts that undergo fractional crystallization at low pressures, extracting plagioclase as floatation layers are favorable conditions for Fe$^{2+}$ substitution into plagioclase. Such conditions are more consistent with either a mantle overturn scenario or impact-generated melts than with partial melting of hydrated crust.
+
+The above mechanisms need not be mutually exclusive. The early Martian crust likely formed through a complex interplay of processes operating at different spatial and temporal scales. Cumulate mantle overturn may have produced voluminous melts that solidified into differentiated igneous complexes while concurrent impact events generated substantial near-surface melt across the planet.
+
+In the elevated geothermal and water-rich environment of early Mars, surface volcanics and shallow crustal materials would have undergone hydrothermal alteration \citep{Viviano2019}. After subsequent burial and diagenesis, these altered materials could have experienced partial melting, producing intermediate to evolved compositions. The spatial distribution of these evolved compositions would likely be heterogeneous, with concentrations in regions of thicker crust or areas with significant hydrothermal activity. Such a multi-stage petrogenetic history is likely necessary to explain the diverse suite of feldspathic materials observed across Mars \citep{Carter2013, Wray2013, Rogers2015, Viviano-Beck2017, Farrand2021, Payre2022, Payre2024, Phillips2022, Flahaut2023, Michalski2023}.
+
+\subsection*{Implications for crustal formation, density, and remnant magnetism}
+
+The presence of anorthositic rocks and associated mafic lithologies in ancient crustal materials uplifted by the Argyre impact has implications for understanding Mars' early crustal evolution. The similar detection of plagioclase-rich materials at both Argyre and Hellas \citep{Phillips2022} suggests this was a hemispheric, if not global, component of Mars' lower crust. This supports models of early Martian evolution involving hemisphere-scale or global-scale production of magma, though the specific mechanism remains uncertain. These observations show crustal differentiation can occur without plate tectonics -- possibly via fractional crystallization of large mafic magma bodies -- a process which may be applicable to early Earth.
+
+While plagioclase-rich rocks are present, they constitute only about 4\% of the exposed pre-Argyre crust by area based on our detections. This proportion alone is unlikely to explain the overall lower density of Mars' lower crust inferred from geochemical and geophysical data \citep{Baratoux2014, Goossens2017, Knapmeyer-Endrun2021, Drilleau2023, Joshi2023}. Additional factors, such as increased porosity, alteration, or hydration, may be necessary to explain the lower crustal density \citep{Ehlmann2010, Bandfield2013, Sun2015, Wordsworth2017, Goossens2017, Wieczorek2022, Carrasco2023}. Alternatively, the olivine- and LCP-bearing compositions detected in our study may contain a significant feldspar component that is not reflected in their spectral signatures due to the masking effect of mafic minerals (e.g., Extended Data Fig. 5). Such a scenario would lead to an underestimation of the total feldspathic component present in Argyre uplift materials. Indeed, the character of the THEMIS spectra suggest these rocks follow a more gabbroic than ultramafic trend (Fig. 3). However, further detailed analyses are necessary to determine whether troctolite or leucogabbro/leuconorite are present in the uplifted materials surrounding Argyre.
+
+The igneous complexes suggested by our observations may also have implications for Mars' remnant crustal magnetism. Layered mafic intrusions and massif anorthosites on Earth often contain significant quantities of iron-oxide minerals such as magnetite and titanomagnetite, which can carry strong remanent magnetization. The shallow differentiated igneous complexes that may have formed during Mars' early history, when the planet still had an active dynamo, could contain the minerals necessary to carry the strong crustal magnetic anomalies observed in the southern highlands.
+
+\subsection*{Conclusions}
+
+Detection of widespread plagioclase-rich outcrops within material uplifted by the Argyre basin-forming impact provides compelling evidence for the presence of feldspathic, possibly anorthositic, rocks as a component of Mars' lower crust. The association of these plagioclase-rich materials with olivine and pyroxene-bearing outcrops suggests they represent components of ancient, differentiated complexes of either igneous or impact origin (or both) that formed during Mars' early crustal development.
+
+Observations of crustal compositions indicative of LMI-like complexes support models of early Martian evolution involving large-scale melting, though the specific mechanism---whether mantle overturn, impact melting, or other processes---remains open to debate. The presence of similar plagioclase-rich materials uplifted by both the Argyre and Hellas impacts suggests their formation required a hemispheric or global process rather than isolated activity. This evidence provides constraints for refining theoretical and computational models of early Mars crust formation and offers insights into differentiation processes on terrestrial planets lacking plate tectonics.
+
+Missions targeting ancient crustal materials could provide additional constraints on their composition, age, and formation mechanisms. For example, detections of sulfide, spinel and oxide horizons in association with layered intrusive outcrops would support an interpretation that these rocks represent differentiated complexes. The Perseverance rover at Jezero crater has recently observed feldspar dominated \citep{Bedford2024, Schmidt2025} and spinel-bearing rocks \citep{Mansbach2024, Bedford2024, Lawson2025} that could represent material uplifted by the Isidis-forming impact, warranting further investigation.
+
+\section*{Methods}
+
+\subsection*{Reflectance Spectroscopic Analyses}
+
+CRISM data were analyzed using the Spectral Cube Analysis Tool \citep{Phillips2024}. Regions of interest were drawn using combinations of CRISM spectral parameters \citep{Viviano2014} and spectra were then averaged from the ROIs and ratioed to in-scene spectrally bland regions -- a common technique in CRISM analysis to remove column-dependent instrument and atmospheric artifacts in the data. Interpretations of mineralogy present in each spectrum were made through visual comparison to reference spectral libraries (Minerals identified with CRISM Analysis [MICA], \citealt{Viviano2014}; USGS Spectral Library v7, \citealt{Kokaly2017}).
+
+Plagioclase was identified based on the presence of a broad absorption feature centered at approximately 1.25-µm (Fig. 3). Pyroxene detections were categorized as low-calcium pyroxene (LCP) and high-calcium pyroxene (HCP) based on the minimum positions of the $\sim$1- and $\sim$2-µm absorption bands. Olivine detections were categorized as "Type 1" and "Type 2" olivine \citep{Ody2013} based on 5 band parameters (band center, band depth, band asymmetry, slope between 1 and 1.3 µm, and full width half max) that quantify properties of the $\sim$1-µm olivine absorption feature (Extended Data Fig. 6). Type 1 olivine is considered either more forsteritic or smaller grain-size and Type 2 olivine is either more fayalitic or larger grain-size. Spectra with a 1-µm olivine absorption and a broad 2-µm absorption consistent with HCP were categorized as Olivine + HCP. Spectra were further categorized as Low, Moderate, or High confidence based on the strength and clarity of absorption features present on a qualitative basis (Fig. 3). Geologic units from \citet{Dohm2015} were used to select mineral units within materials either uplifted by the Argyre impact or uplifted by later large impacts into Argyre rim materials (Extended Data Table 3).
+
+\subsection*{Thermal Emissivity Analyses}
+
+In addition to reflectance spectroscopy, 100 m/pixel, 9-band thermal emissivity data from the Thermal Emission Imaging System (THEMIS) onboard the 2001 Mars Odyssey orbiter \citep{Christensen2004} were used to constrain the silica content of select spectrally feldspathic outcrops. THEMIS data with the warmest available surface temperatures were processed following the methods of \citet{Bandfield2004}. In the absence of alteration, the wavelength of minimum emissivity is negatively correlated with the silica content of a rock \citep{Lyon1965}. Felsic, mafic, and ultramafic rocks show minima at $\sim$9 \textmu m, $\sim$10.4 \textmu m, and 11 \textmu m, respectively. Notably, anorthositic compositions can display minima consistent with mafic/gabbroic compositions due to their similar silica contents.
+
+To assess the silica content of outcrops identified with CRISM, we calculated two metrics for the THEMIS emissivity minimum position: the cubic spline fit minimum (CSFM) and the weighted absorption center (WAC). The CSFM method fits a cubic spline to the THEMIS emissivity data for bands 3 -- 8 ($\lambda$ = 7.89 -- 12.56 µm) and returns the minimum of the cubic spline fit values \citep{Rogers2015}. The WAC method calculates the wavelength value at which the cumulative absorption area equals half the total absorption area \citep{Vincent1972, Smith2013, Amador2016}. The WAC metric has less variance than the CSFM and is more robust against idiosyncrasies in wavelength minimum values that may arise from a cubic spline fit; however, both measurements correlate inversely with the total silica content of the rock \citep{Vincent1972, Walter1989, Rogers2015, Amador2016}.
+
+The relationship between CSFM and WAC can further elucidate the spectral character of rocks, particularly for anorthositic and gabbroic compositions compared to intermediate rocks. We calculated WAC and CSFM values for THEMIS-convolved reference spectra from the Arizona State University (ASU) spectral library (ASU), RELAB database (Brown University), Ward's spectral library (Bryson), and from \citet{Dunn2021}. CSFM values show a wider range than WAC values (Fig. 3B). For felsic and intermediate rocks, CSFM values are lower than the corresponding WAC values for the same rock. For mafic, ultramafic, gabbroic, anorthositic, and pyroxenitic rocks the CSFM--WAC values show an approximate 1:1 relationship with some CSFM values being higher and some lower than the corresponding WAC values. For middling WAC values ($\sim$10.1 to 10.4 µm) that could be interpreted as multiple rock types (e.g., intermediate, anorthositic, gabbroic), a relatively high CSFM value would indicate a more anorthositic or gabbroic rock (Fig. 3B).
+
+\subsection*{Assessment of Color, Geomorphological and Thermophysical Properties}
+
+We used the 5 m/pixel Context Camera (CTX) global mosaic \citep{Malin2007, Dickson2018} and 0.25 m/pixel High Resolution Imaging Science Experiment (HiRISE) images \citep{McEwen2010} to assess the color and texture of outcrops. For HiRISE IRB color analysis, dark subtraction methods were used after \citet{Tornabene2018} to correct for additive atmospheric residuals in the scenes that affect the spectral shape of the data. HiRISE scene ESP\_031269\_1395 overlaps with CRISM-identified plagioclase, LCP, and HCP + olivine outcrops. Regions of interest (ROIs) were drawn from areas overlapping the CRISM-detections to investigate the HiRISE spectral character and support interpretations of similarly colored outcrops in nearby HiRISE scenes (ESP\_020799\_1385, ESP\_031269\_1395) as representative of plagioclase-bearing, LCP-bearing, and olivine/HCP-bearing compositions.
+
+Thermal inertia properties were examined using THEMIS global thermal inertia mosaic \citep{Fergason2006, Edwards2009} and nighttime infrared data \citep{Edwards2011} to distinguish relatively consolidated from unconsolidated materials.
+
+\section*{Data availability}
+
+All data used in this study are available from public repositories. CRISM data are available from the Planetary Data System (PDS) Geosciences Node. THEMIS, CTX, and HiRISE data are available from their respective PDS nodes. Processed data products, including interpreted spectral detection maps with associated metadata and THEMIS convolved reference spectra, as well as code used to produce the figures in this publication are available at [zenodo citation once uploaded].
+
+\section*{Acknowledgments}
+
+This research utilizes spectra acquired with the NASA RELAB facility at Brown University. We are grateful to Dr. James Dohm for sharing GIS files from his 2015 published map of the Argyre basin. Funding was from MDAP \#\#\#\#. [Thank you to reviewers once reviewed].
+
+\begin{thebibliography}{99}
+
+\bibitem[Abe(2011)]{Abe2011} Abe, Y., 2011, Protoatmospheres and Surface Environment of Protoplanets: Earth, Moon, and Planets, v. 108, p. 9--14, doi:10.1007/s11038-010-9368-x.
+
+\bibitem[Adams(1968)]{Adams1968} Adams, J.B., 1968, Lunar and martian surfaces - petrologic significance of absorption bands in the near-infrared: Science, v. 159, p. 1453--1455.
+
+\bibitem[Adams et al.(1973)]{Adams1973} Adams, J.B., Bell, P.M., Conel, J.E., Mao, H.K., McCord, T.B., and Nash, D.B., 1973, Visible and near-infra-red transmission and reflectance measurements of the Luna 20 soil: Geochimica et Cosmochimica Acta, v. 37, p. 731--743, doi:10.1016/0016-7037(73)90170-1.
+
+\bibitem[Adams and Filice(1967)]{Adams1967} Adams, J.B., and Filice, A.L., 1967, Spectral reflectance 0.4 to 2.0 microns of silicate rock powders: Journal of Geophysical Research, v. 72, doi:10.1029/JZ072i022p05705.
+
+\bibitem[Adams and Goullaud(1978)]{Adams1978} Adams, J.B., and Goullaud, L.H., 1978, Plagioclase feldspars: Visible and near infrared diffuse reflectance spectra as applied to remote sensing: Lunar and Planetary Science Conference, p. 2901--2909.
+
+\bibitem[Amador and Bandfield(2016)]{Amador2016} Amador, E.S., and Bandfield, J.L., 2016, Elevated bulk-silica exposures and evidence for multiple aqueous alteration episodes in Nili Fossae, Mars: Icarus, v. 276, p. 39--51, doi:10.1016/j.icarus.2016.04.015.
+
+\bibitem[Andrews-Hanna et al.(2008)]{Andrews-Hanna2008} Andrews-Hanna, J.C., Zuber, M.T., and Banerdt, W.B., 2008, The Borealis basin and the origin of the martian crustal dichotomy.: Nature, v. 453, p. 1212, doi:10.1038/nature07011.
+
+\bibitem[Arndt(2013)]{Arndt2013} Arndt, N., 2013, The formation of massif anorthosite: Petrology in reverse: Geoscience Frontiers, v. 4, p. 195--198, doi:10.1016/j.gsf.2012.08.002.
+
+\bibitem[Ashwal(1993)]{Ashwal1993} Ashwal, L.D., 1993, Anorthosites: Springer-Verlag, Berlin.
+
+\bibitem[Ashwal(2021)]{Ashwal2021} Ashwal, L.D., 2021, Anorthosites, \textit{in} Alderton, D. and Elias, S.A. eds., Encyclopedia of Geology (Second Edition), Oxford, Academic Press, p. 130--144, doi:10.1016/B978-0-12-409548-9.12461-3.
+
+\bibitem[Ballantyne et al.(2023)]{Ballantyne2023} Ballantyne, H.A., Jutzi, M., Golabek, G.J., Mishra, L., Cheng, K.W., Rozel, A.B., and Tackley, P.J., 2023, Investigating the feasibility of an impact-induced Martian Dichotomy: Icarus, v. 392, p. 115395, doi:10.1016/j.icarus.2022.115395.
+
+\bibitem[Bandfield et al.(2013)]{Bandfield2013} Bandfield, J.L., Edwards, C.S., Montgomery, D.R., and Brand, B.D., 2013, The dual nature of the martian crust: Young lavas and old clastic materials: Icarus, v. 222, p. 188--199, doi:10.1016/j.icarus.2012.10.023.
+
+\bibitem[Bandfield et al.(2004)]{Bandfield2004} Bandfield, J.L., Rogers, D., Smith, M.D., and Christensen, P.R., 2004, Atmospheric correction and surface spectral unit mapping using Thermal Emission Imaging System data: Journal of Geophysical Research: Planets, v. 109, doi:10.1029/2004JE002289.
+
+\bibitem[Baratoux et al.(2014)]{Baratoux2014} Baratoux, D., Samuel, H., Michaut, C., Toplis, M.J., Monnereau, M., Wieczorek, M., Garcia, R., and Kurita, K., 2014, Petrological constraints on the density of the Martian crust: Journal of Geophysical Research: Planets, v. 119, p. 1707--1727, doi:10.1002/2014JE004642.
+
+\bibitem[Barthez et al.(2023)]{Barthez2023} Barthez, M., Flahaut, J., Guitreau, M., Ito, G., and Pik, R., 2023, Understanding VNIR Plagioclase Signatures on Mars Through Petrographic, Geochemical, and Spectral Characterization of Terrestrial Feldspar-Bearing Igneous Rocks: Journal of Geophysical Research: Planets, v. 128, p. e2022JE007680, doi:10.1029/2022JE007680.
+
+\bibitem[Bedford et al.(2024)]{Bedford2024} Bedford, C. et al., 2024, Investigating the source of unusual kaolinite-spinel float rocks in Jezero crater, Mars, and their implications for Mars crustal processes., \textit{in} GOLDSCHMIDT, https://conf.goldschmidt.info/goldschmidt/2024/meetingapp.cgi/Paper/24127.
+
+\bibitem[Bernadet et al.(2025)]{Bernadet2025} Bernadet, J., Borisova, A.Y., Guitreau, M., Safonov, O.G., Asimow, P., Nédélec, A., Bohrson, W.A., Kosova, S.A., and de Parseval, P., 2025, Making continental crust on water-bearing terrestrial planets: Science Advances, v. 11, p. eads6746, doi:10.1126/sciadv.ads6746.
+
+\bibitem[Bibring et al.(2006)]{Bibring2006} Bibring, J.-P. et al., 2006, Global Mineralogical and Aqueous Mars History Derived from OMEGA/Mars Express Data: Science, v. 312, p. 400--404, doi:10.1126/science.1122659.
+
+\bibitem[Bishop et al.(2008)]{Bishop2008} Bishop, J.L. et al., 2008, Phyllosilicate diversity and past aqueous activity revealed at Mawrth Vallis, Mars: Science, v. 321, p. 830--833.
+
+\bibitem[Black and Marchi(2024)]{Black2024} Black, B.A., and Marchi, S., 2024, Buoyant Impact Partial Melts on Ancient Mars: Journal of Geophysical Research: Planets, v. 129, p. e2023JE008040, doi:10.1029/2023JE008040.
+
+\bibitem[Bonnet Gibet et al.(2025)]{BonnetGibet2025} Bonnet Gibet, V., Michaut, C., Bodin, T., Wieczorek, M., and Dubuffet, F., 2025, Martian Highlands Differentiation Concomitant to Dichotomy Formation: Journal of Geophysical Research: Planets, v. 130, p. e2024JE008486, doi:10.1029/2024JE008486.
+
+\bibitem[Bonnet Gibet et al.(2022)]{BonnetGibet2022} Bonnet Gibet, V., Michaut, C., Wieczorek, M., and Lognonné, P., 2022, A Positive Feedback Between Crustal Thickness and Melt Extraction for the Origin of the Martian Dichotomy: Journal of Geophysical Research: Planets, v. 127, p. e2022JE007472, doi:10.1029/2022JE007472.
+
+\bibitem[Borg and Draper(2003)]{Borg2003} Borg, L.E., and Draper, D.S., 2003, A petrogenetic model for the origin and compositional variation of the martian basaltic meteorites: Meteoritics \& Planetary Science, v. 38, p. 1713--1731, doi:10.1111/j.1945-5100.2003.tb00011.x.
+
+\bibitem[Bouley et al.(2020)]{Bouley2020} Bouley, S. et al., 2020, A thick crustal block revealed by reconstructions of early Mars highlands: Nature Geoscience, v. 13, p. 105--109, doi:10.1038/s41561-019-0512-6.
+
+\bibitem[Buczkowski et al.(2010)]{Buczkowski2010} Buczkowski, D.L., Murchie, S., Clark, R., Seelos, K., Seelos, F., Malaret, E., and Hash, C., 2010, Investigation of an Argyre basin ring structure using Mars Reconnaissance Orbiter/Compact Reconnaissance Imaging Spectrometer for Mars: Journal of Geophysical Research: Planets, v. 115, doi:10.1029/2009JE003508.
+
+\bibitem[Carrasco et al.(2023)]{Carrasco2023} Carrasco, S., Knapmeyer-Endrun, B., Margerin, L., Xu, Z., Joshi, R., Schimmel, M., Stutzmann, É., Charalambous, C., Lognonné, P., and Banerdt, W.B., 2023, Constraints for the martian crustal structure from rayleigh waves ellipticity of large seismic events: Geophysical Research Letters, v. 50, doi:10.1029/2023gl104816.
+
+\bibitem[Carter and Poulet(2013)]{Carter2013} Carter, J., and Poulet, F., 2013, Ancient plutonic processes on Mars inferred from the detection of possible anorthositic terrains: Nature Geoscience, v. 6, p. 1008, doi:10.1038/ngeo1995.
+
+\bibitem[Carter et al.(2023)]{Carter2023} Carter, J., Riu, L., Poulet, F., Bibring, J.-P., Langevin, Y., and Gondet, B., 2023, A Mars orbital catalog of aqueous alteration signatures (MOCAAS): Icarus, v. 389, p. 115164, doi:10.1016/j.icarus.2022.115164.
+
+\bibitem[Cheek and Pieters(2014)]{Cheek2014} Cheek, L.C., and Pieters, C.M., 2014, Reflectance spectroscopy of plagioclase-dominated mineral mixtures: Implications for characterizing lunar anorthosites remotely: American Mineralogist, v. 99, p. 1871--1892, doi:10.2138/am-2014-4785.
+
+\bibitem[Cheng et al.(2024)]{Cheng2024} Cheng, K.W., Rozel, A.B., Golabek, G.J., Ballantyne, H.A., Jutzi, M., and Tackley, P.J., 2024, Mars's Crustal and Volcanic Structure Explained by Southern Giant Impact and Resulting Mantle Depletion: Geophysical Research Letters, v. 51, p. e2023GL105910, doi:10.1029/2023GL105910.
+
+\bibitem[Christensen et al.(2004)]{Christensen2004} Christensen, P.R. et al., 2004, The Thermal Emission Imaging System (THEMIS) for the Mars 2001 Odyssey Mission: Space Science Reviews, v. 110, p. 85--130, doi:10.1023/B:SPAC.0000021008.16305.94.
+
+\bibitem[Clark and Roush(1984)]{Clark1984} Clark, R.N., and Roush, T.L., 1984, Reflectance spectroscopy: Quantitative analysis techniques for remote sensing applications: Journal of Geophysical Research: Solid Earth, v. 89, p. 6329--6340, doi:10.1029/JB089iB07p06329.
+
+\bibitem[Crown and Pieters(1987)]{Crown1987} Crown, D.A., and Pieters, C.M., 1987, Spectral properties of plagioclase and pyroxene mixtures and the interpretation of lunar soil spectra: Icarus, v. 72, p. 492--506, doi:10.1016/0019-1035(87)90047-9.
+
+\bibitem[Debaille et al.(2008)]{Debaille2008} Debaille, V., Yin, Q.Z., Brandon, A.D., and Jacobsen, B., 2008, Duration of a Magma Ocean and Subsequent Mantle Overturn in Mars: Evidence from Nakhlites: Lunar and Planetary Science Conference XXXIX, Abstract \#1837.
+
+\bibitem[Dickson et al.(2018)]{Dickson2018} Dickson, J.L., Kerber, L., Fassett, C.I., and Ehlmann, B., 2018, A Global, Blended CTX Mosaic of Mars with Vectorized Seam Mapping: A New Mosaicking Pipeline Using Principles of Non-Destructive Image Editing: Lunar and Planetary Science Conference XLIX, Abstract \#2480.
+
+\bibitem[Dohm et al.(2015)]{Dohm2015} Dohm, J.M. et al., 2015, Geological and hydrological histories of the Argyre province, Mars: Icarus, v. 253, p. 66--98, doi:10.1016/j.icarus.2015.02.017.
+
+\bibitem[Don and Steven(1984)]{Don1984} Don, E.W., and Steven, W.S., 1984, The martian hemispheric dichotomy may be due to a giant impact: Nature, v. 309, p. 138, doi:10.1038/309138a0.
+
+\bibitem[Drilleau et al.(2023)]{Drilleau2023} Drilleau, M., Beucler, É., Shi, J., Knapmeyer-Endrun, B., Garcia, R.F., Ansan, V., Kim, D., Lognonné, P., and Banerdt, W.B., 2023, Structure of the Martian Crust Below InSight From Surface Waves and Body Waves Generated by Nearby Meteoroid Impacts: Geophysical Research Letters, v. 50, p. e2023GL104601, doi:10.1029/2023GL104601.
+
+\bibitem[Dunn(2021)]{Dunn2021} Dunn, T.L., 2021, Thermal emission spectra of terrestrial alkaline rocks:, doi:10.5281/zenodo.5789166.
+
+\bibitem[Edwards et al.(2009)]{Edwards2009} Edwards, C.S., Bandfield, J.L., Christensen, P.R., and Fergason, R.L., 2009, Global distribution of bedrock exposures on Mars using THEMIS high‐ resolution thermal inertia: Journal of Geophysical Research: Planets, v. 114, doi:10.1029/2009JE003363.
+
+\bibitem[Edwards et al.(2011)]{Edwards2011} Edwards, C.S., Nowicki, K.J., Christensen, P.R., Hill, J., Gorelick, N., and Murray, K., 2011, Mosaicking of global planetary image datasets: 1. Techniques and data processing for Thermal Emission Imaging System (THEMIS) multi-spectral data: Journal of Geophysical Research: Planets, v. 116, doi:10.1029/2010JE003755.
+
+\bibitem[Eggers et al.(2021)]{Eggers2021} Eggers, G.L., Wray, J.J., and Dufek, J., 2021, Compositional Mapping of the Nili Patera Feldspathic Unit: Extent and Implications for Formation: Journal of geophysical research. Planets, v. 126, doi:10.1029/2020JE006383.
+
+\bibitem[Ehlmann et al.(2009)]{Ehlmann2009} Ehlmann, B.L. et al., 2009, Identification of hydrated silicate minerals on Mars using MRO-CRISM: Geologic context near Nili Fossae and implications for aqueous alteration: Journal of Geophysical Research: Planets, v. 114, doi:10.1029/2009JE003339.
+
+\bibitem[Ehlmann and Edwards(2014)]{Ehlmann2014} Ehlmann, B.L., and Edwards, C.S., 2014, Mineralogy of the Martian Surface: Annual Review of Earth and Planetary Sciences, v. 42, p. 291--315, doi:10.1146/annurev-earth-060313-055024.
+
+\bibitem[Ehlmann et al.(2010)]{Ehlmann2010} Ehlmann, B.L., Mustard, J.F., and Murchie, S.L., 2010, Geologic setting of serpentine deposits on mars: Geophysical Research Letters, v. 37, doi:10.1029/2010gl042596.
+
+\bibitem[Elkins-Tanton(2012)]{Elkins-Tanton2012} Elkins-Tanton, L.T., 2012, Magma Oceans in the Inner Solar System: Annual Review of Earth and Planetary Sciences, v. 40, p. 113--139, doi:https://doi.org/10.1146/annurev-earth-042711-105503.
+
+\bibitem[Elkins-Tanton et al.(2005)]{Elkins-Tanton2005} Elkins-Tanton, L.T., Hess, P.C., and Parmentier, E.M., 2005, Possible formation of ancient crust on Mars through magma ocean processes: Journal of Geophysical Research: Planets, v. 110, doi:10.1029/2005JE002480.
+
+\bibitem[Emslie et al.(1994)]{Emslie1994} Emslie, R.F., Hamilton, M.A., and Thériault, R.J., 1994, Petrogenesis of a Mid-Proterozoic Anorthosite-Mangerite-Charnockite-Granite (AMCG) Complex: Isotopic and Chemical Evidence from the Nain Plutonic Suite: The Journal of Geology, v. 102, p. 539--558, doi:10.1086/629697.
+
+\bibitem[Farrand et al.(2021)]{Farrand2021} Farrand, W.H., Rice, J.W., Chuang, F.C., and Rogers, A.D., 2021, Spectral and geological analyses of domes in western Arcadia Planitia, Mars: Evidence for intrusive alkali-rich volcanism and ice-associated surface features: Icarus, v. 357, p. 114111, doi:10.1016/j.icarus.2020.114111.
+
+\bibitem[Fergason et al.(2006)]{Fergason2006} Fergason, R.L., Christensen, P.R., and Kieffer, H.H., 2006, High-resolution thermal inertia derived from the Thermal Emission Imaging System (THEMIS): Thermal model and applications: Journal of Geophysical Research: Planets, v. 111, doi:10.1029/2006JE002735.
+
+\bibitem[Flahaut et al.(2023)]{Flahaut2023} Flahaut, J., Payet, V., Fueten, F., Guitreau, M., Barthez, M., Ito, G., and Allemand, P., 2023, New Detections of Feldspar-Bearing Volcanic Rocks in the Walls of Valles Marineris, Mars: Geophysical Research Letters, v. 50, p. e2022GL100772, doi:10.1029/2022GL100772.
+
+\bibitem[Golabek et al.(2011)]{Golabek2011} Golabek, G.J., Keller, T., Gerya, T.V., Zhu, G., Tackley, P.J., and Connolly, J.A.D., 2011, Origin of the martian dichotomy and Tharsis from a giant impact causing massive magmatism: Icarus, v. 215, p. 346--357, doi:10.1016/j.icarus.2011.06.012.
+
+\bibitem[Goossens et al.(2017)]{Goossens2017} Goossens, S., Sabaka, T.J., Genova, A., Mazarico, E., Nicholas, J.B., and Neumann, G.A., 2017, Evidence for a Low Bulk Crustal Density for Mars from Gravity and Topography: Geophysical research letters, v. 44, p. 7686--7694, doi:10.1002/2017GL074172.
+
+\bibitem[Grieve et al.(1991)]{Grieve1991} Grieve, R.A.F., Stöffler, D., and Deutsch, A., 1991, The Sudbury structure: Controversial or misunderstood? Journal of Geophysical Research: Planets, v. 96, p. 22753--22764, doi:10.1029/91JE02513.
+
+\bibitem[Hamilton et al.(2010)]{Hamilton2010} Hamilton, M.A., Scoates, J.S., and Rämö, O.T., 2010, The petrology of anorthosites, related granitic rocks, and UHT assemblages: a tribute to Ronald F. Emslie: The Canadian Mineralogist, v. 48, p. 705--710.
+
+\bibitem[Humayun et al.(2013)]{Humayun2013} Humayun, M. et al., 2013, Origin and age of the earliest Martian crust from meteorite NWA 7533: Nature, v. 503, p. 513--516, doi:10.1038/nature12764.
+
+\bibitem[Hurwitz and Kring(2014)]{Hurwitz2014} Hurwitz, D.M., and Kring, D.A., 2014, Differentiation of the South Pole--Aitken basin impact melt sheet: Implications for lunar exploration: Journal of Geophysical Research: Planets, v. 119, p. 1110--1133, doi:10.1002/2013JE004530.
+
+\bibitem[Jonasson(2007)]{Jonasson2007} Jónasson, K., 2007, Silicic volcanism in Iceland: Composition and distribution within the active volcanic zones: Journal of Geodynamics, v. 43, p. 101--117, doi:10.1016/j.jog.2006.09.004.
+
+\bibitem[Joshi et al.(2023)]{Joshi2023} Joshi, R., Knapmeyer-Endrun, B., Mosegaard, K., Wieczorek, M.A., Igel, H., Christensen, U.R., and Lognonné, P., 2023, Joint Inversion of Receiver Functions and Apparent Incidence Angles to Determine the Crustal Structure of Mars: Geophysical Research Letters, v. 50, p. e2022GL100469, doi:10.1029/2022GL100469.
+
+\bibitem[Keller et al.(2024)]{Keller2024} Keller, D.S., Lee, C.-T.A., Peck, W.H., Monteleone, B.D., Martin, C., Vervoort, J.D., and Bolge, L., 2024, Mafic slab melt contributions to Proterozoic massif-type anorthosites: Science Advances, v. 10, p. eadn3976, doi:10.1126/sciadv.adn3976.
+
+\bibitem[Knapmeyer-Endrun et al.(2021)]{Knapmeyer-Endrun2021} Knapmeyer-Endrun, B. et al., 2021, Thickness and structure of the martian crust from InSight seismic data: Science, v. 373, p. 438--443, doi:10.1126/science.abf8966.
+
+\bibitem[Koeppel et al.(2020)]{Koeppel2020} Koeppel, A.H.D., Black, B.A., and Marchi, S., 2020, Differentiation in impact melt sheets as a mechanism to produce evolved magmas on Mars: Icarus, v. 335, p. 113422, doi:10.1016/j.icarus.2019.113422.
+
+\bibitem[Koeppen and Hamilton(2008)]{Koeppen2008} Koeppen, W.C., and Hamilton, V.E., 2008, Global distribution, composition, and abundance of olivine on the surface of Mars from thermal infrared data: Journal of Geophysical Research: Planets, v. 113, doi:10.1029/2007JE002984.
+
+\bibitem[Kokaly et al.(2017)]{Kokaly2017} Kokaly, R. et al., 2017, USGS Spectral Library Version 7 Data:, doi:10.5066/F7RR1WDJ.
+
+\bibitem[Kruijer et al.(2020)]{Kruijer2020} Kruijer, T.S., Borg, L.E., Wimpenny, J., and Sio, C.K., 2020, Onset of magma ocean solidification on Mars inferred from Mn-Cr chronometry: Earth and Planetary Science Letters, v. 542, p. 116315, doi:10.1016/j.epsl.2020.116315.
+
+\bibitem[Latypov et al.(2020)]{Latypov2020} Latypov, R., Chistyakova, S., Costin, G., Namur, O., Barnes, S., and Kruger, W., 2020, Monomineralic anorthosites in layered intrusions are indicators of the magma chamber replenishment by plagioclase-only-saturated melts: Scientific Reports, v. 10, p. 3839, doi:10.1038/s41598-020-60778-w.
+
+\bibitem[Lawson et al.(2025)]{Lawson2025} Lawson, P.R. et al., 2025, Adaptive sampling with PIXL on the Mars \textit{Perseverance} rover: Icarus, v. 429, p. 116433, doi:10.1016/j.icarus.2024.116433.
+
+\bibitem[Leone et al.(2014)]{Leone2014} Leone, G., Tackley, P.J., Gerya, T.V., May, D.A., and Zhu, G., 2014, Three-dimensional simulations of the southern polar giant impact hypothesis for the origin of the Martian dichotomy: Geophysical Research Letters, v. 41, p. 8736--8743, doi:10.1002/2014GL062261.
+
+\bibitem[Longhi et al.(1976)]{Longhi1976} Longhi, J., Walker, D., and Hays, J.F., 1976, Fe and Mg in plagioclase: Lunar and Planetary Science Conference Proceedings, v. 1, p. 1281--1300.
+
+\bibitem[Lundgaard and Tegner(2004)]{Lundgaard2004} Lundgaard, K.L., and Tegner, C., 2004, Partitioning of ferric and ferrous iron between plagioclase and silicate melt: Contributions to Mineralogy and Petrology, v. 147, p. 470--483, doi:10.1007/s00410-004-0568-0.
+
+\bibitem[Lyon(1965)]{Lyon1965} Lyon, R.J.P., 1965, Analysis of rocks by spectral infrared emission (8 to 25 microns): Economic Geology, v. 60, p. 715--736, doi:10.2113/gsecongeo.60.4.715.
+
+\bibitem[Malin et al.(2007)]{Malin2007} Malin, M.C. et al., 2007, Context Camera Investigation on board the Mars Reconnaissance Orbiter: Journal of Geophysical Research: Planets, v. 112, doi:10.1029/2006JE002808.
+
+\bibitem[Mansbach et al.(2024)]{Mansbach2024} Mansbach, E.N. et al., 2024, Likely Ferromagnetic Minerals Identified by the Perseverance Rover and Implications for Future Paleomagnetic Analyses of Returned Martian Samples: Authorea, doi:10.22541/essoar.170901873.38958478/v1.
+
+\bibitem[Manske et al.(2021)]{Manske2021} Manske, L., Marchi, S., Plesa, A.-C., and Wünnemann, K., 2021, Impact melting upon basin formation on early Mars: Icarus, v. 357, p. 114128, doi:10.1016/j.icarus.2020.114128.
+
+\bibitem[Marinova et al.(2008)]{Marinova2008} Marinova, M.M., Aharonson, O., and Asphaug, E., 2008, Mega-impact formation of the Mars hemispheric dichotomy: Nature, v. 453, p. 1216--1219, doi:10.1038/nature07070.
+
+\bibitem[Martin and Sigmarsson(2007)]{Martin2007} Martin, E., and Sigmarsson, O., 2007, Crustal thermal state and origin of silicic magma in Iceland: the case of Torfajökull, Ljósufjöll and Snæfellsjökull volcanoes: Contributions to Mineralogy and Petrology, v. 153, p. 593--605, doi:10.1007/s00410-006-0165-5.
+
+\bibitem[Martin and Sigmarsson(2010)]{Martin2010} Martin, E., and Sigmarsson, O., 2010, Thirteen million years of silicic magma production in Iceland: Links between petrogenesis and tectonic settings: Lithos, v. 116, p. 129--144, doi:10.1016/j.lithos.2010.01.005.
+
+\bibitem[McEwen et al.(2010)]{McEwen2010} McEwen, A.S. et al., 2010, The High Resolution Imaging Science Experiment (HiRISE) during MRO's Primary Science Phase (PSP): Icarus, v. 205, p. 2--37, doi:10.1016/j.icarus.2009.04.023.
+
+\bibitem[McGetchin and Smith(1978)]{McGetchin1978} McGetchin, T.R., and Smith, J.R., 1978, The mantle of Mars: Some possible geological implications of its high density: Icarus, v. 34, p. 512--536, doi:10.1016/0019-1035(78)90042-8.
+
+\bibitem[McNeil et al.(2025)]{McNeil2025} McNeil, J.D., Fawdon, P., Balme, M.R., Coe, A.L., Cuadros, J., and Turner, S.M.R., 2025, Dichotomy retreat and aqueous alteration on Noachian Mars recorded in highland remnants: Nature Geoscience, v. 18, p. 124--132, doi:10.1038/s41561-024-01634-8.
+
+\bibitem[McSween(2015)]{McSween2015} McSween, H.Y., 2015, Petrology on Mars: American Mineralogist, v. 100, p. 2380--2395, doi:10.2138/am-2015-5257.
+
+\bibitem[McSween et al.(2023)]{McSween2023} McSween, H.Y., Head III, J.W., Rogers, A.D., and Schmidt, M.E., 2023, Assessing global trends in Mars magma compositions using ground truth: Meteoritics \& Planetary Science, v. 58, p. 1306--1317, doi:10.1111/maps.14057.
+
+\bibitem[McSween et al.(2009)]{McSween2009} McSween, H.Y., Taylor, G.J., and Wyatt, M.B., 2009, Elemental Composition of the Martian Crust: Science, v. 324, p. 736--739, doi:10.1126/science.1165871.
+
+\bibitem[Michalski et al.(2023)]{Michalski2023} Michalski, J., Rogers, A., Edwards, C., Cowart, A., and Xiao, L., 2023, Diverse volcanism and crustal evolution on early Mars: In Review preprint, doi:10.21203/rs.3.rs-2359881/v1.
+
+\bibitem[Murchie et al.(2007)]{Murchie2007} Murchie, S. et al., 2007, Compact Reconnaissance Imaging Spectrometer for Mars (CRISM) on Mars Reconnaissance Orbiter (MRO): Journal of Geophysical Research: Planets, v. 112, doi:10.1029/2006JE002682.
+
+\bibitem[Nimmo et al.(2008)]{Nimmo2008} Nimmo, F., Hart, S.D., Korycansky, D.G., and Agnor, C.B., 2008, Implications of an impact origin for the martian hemispheric dichotomy: Nature, v. 453, p. 1220--1223, doi:10.1038/nature07025.
+
+\bibitem[Ody et al.(2013)]{Ody2013} Ody, A., Poulet, F., Bibring, J.-P., Loizeau, D., Carter, J., Gondet, B., and Langevin, Y., 2013, Global investigation of olivine on Mars: Insights into crust and mantle compositions: Journal of Geophysical Research: Planets, v. 118, p. 234--262, doi:10.1029/2012JE004149.
+
+\bibitem[Payré et al.(2022)]{Payre2022} Payré, V., Salvatore, M.R., and Edwards, C.S., 2022, An Evolved Early Crust Exposed on Mars Revealed Through Spectroscopy: Geophysical Research Letters, v. 49, p. e2022GL099639, doi:10.1029/2022GL099639.
+
+\bibitem[Payré et al.(2024)]{Payre2024} Payré, V., Udry, A., and Fraeman, A.A., 2024, Igneous Diversity of the Early Martian Crust: Minerals, v. 14, p. 452, doi:10.3390/min14050452.
+
+\bibitem[Phillips(2024)]{Phillips2024} Phillips, M., 2024, Spectral Cube Analysis Tool: A Python Program for Analyzing Multi- and Hyperspectral Images, \textit{in} Lunar and Planetary Institute, https://www.hou.usra.edu/meetings/lpsc2024/pdf/2637.pdf.
+
+\bibitem[Phillips et al.(2022)]{Phillips2022} Phillips, M.S., Viviano, C.E., Moersch, J.E., Rogers, A.D., McSween, H.Y., and Seelos, F.P., 2022, Extensive and ancient feldspathic crust detected across north Hellas rim, Mars: Possible implications for primary crust formation: Geology, v. 50, p. 1182--1186, doi:10.1130/G50341.1.
+
+\bibitem[Phinney(1992)]{Phinney1992} Phinney, W.C., 1992, Partition coefficients for iron between plagioclase and basalt as a function of oxygen fugacity: Implications for Archean and lunar anorthosites: Geochimica et Cosmochimica Acta, v. 56, p. 1885--1895, doi:10.1016/0016-7037(92)90318-D.
+
+\bibitem[Pompilio et al.(2007)]{Pompilio2007} Pompilio, L., Sgavetti, M., and Pedrazzi, G., 2007, Visible and near-infrared reflectance spectroscopy of pyroxene-bearing rocks: New constraints for understanding planetary surface compositions: Journal of Geophysical Research: Planets, v. 112, doi:10.1029/2006JE002737.
+
+\bibitem[Quantin et al.(2012)]{Quantin2012} Quantin, C., Flahaut, J., Clenet, H., Allemand, P., and Thomas, P., 2012, Composition and structures of the subsurface in the vicinity of Valles Marineris as revealed by central uplifts of impact craters: Icarus, v. 221, p. 436--452, doi:10.1016/j.icarus.2012.07.031.
+
+\bibitem[Reese et al.(2010)]{Reese2010} Reese, C.C., Orth, C.P., and Solomatov, V.S., 2010, Impact origin for the Martian crustal dichotomy: Half emptied or half filled? Journal of Geophysical Research: Planets, v. 115, doi:10.1029/2009JE003506.
+
+\bibitem[Rogers and Farrand(2022)]{Rogers2022} Rogers, A.D., and Farrand, W.H., 2022, Spectral evidence for alkaline rocks and compositional diversity among feldspathic light-toned terrains on Mars: Icarus, v. 376, p. 114883, doi:10.1016/j.icarus.2022.114883.
+
+\bibitem[Rogers and Nekvasil(2015)]{Rogers2015} Rogers, A.D., and Nekvasil, H., 2015, Feldspathic rocks on Mars: Compositional constraints from infrared spectroscopy and possible formation mechanisms: Geophysical Research Letters, v. 42, p. 2619--2626, doi:10.1002/2015GL063501.
+
+\bibitem[Royer et al.(2024)]{Royer2024} Royer, C. et al., 2024, Intense alteration on early Mars revealed by high-aluminum rocks at Jezero crater: Communications Earth \& Environment, v. 5, p. 1--13, doi:10.1038/s43247-024-01837-2.
+
+\bibitem[Sautter et al.(2015)]{Sautter2015} Sautter, V. et al., 2015, In situ evidence for continental crust on early Mars: Nature Geoscience, v. 8, p. 605--609, doi:10.1038/ngeo2474.
+
+\bibitem[Sautter et al.(2016)]{Sautter2016} Sautter, V. et al., 2016, Magmatic complexity on early Mars as seen through a combination of orbital, in-situ and meteorite data: Lithos, v. 254--255, p. 36--52, doi:10.1016/j.lithos.2016.02.023.
+
+\bibitem[Scheinberg et al.(2014)]{Scheinberg2014} Scheinberg, A., Elkins-Tanton, L.T., and Zhong, S.J., 2014, Timescale and morphology of Martian mantle overturn immediately following magma ocean solidification: Journal of Geophysical Research: Planets, v. 119, p. 454--467, doi:10.1002/2013JE004496.
+
+\bibitem[Scheller and Ehlman(2020)]{Scheller2020} Scheller, E.L., and Ehlmann, B.L., 2020, Composition, Stratigraphy, and Geological History of the Noachian Basement Surrounding the Isidis Impact Basin: Journal of Geophysical Research: Planets, v. 125, p. e2019JE006190, doi:10.1029/2019JE006190.
+
+\bibitem[Scherf and Lammer(2020)]{Scherf2020} Scherf, M., and Lammer, H., 2020, Did Mars Possess a Dense Atmosphere During the First $\sim400$ Million Years? Space Science Reviews, v. 217, p. 2, doi:10.1007/s11214-020-00779-3.
+
+\bibitem[Schmidt et al.(2025)]{Schmidt2025} Schmidt, M.E. et al., 2025, Diverse and highly differentiated lava suite in Jezero crater, Mars: Constraints on intracrustal magmatism revealed by Mars 2020 PIXL: Science Advances, v. 11, p. eadr2613, doi:10.1126/sciadv.adr2613.
+
+\bibitem[Seelos et al.(2023)]{Seelos2023} Seelos, F.P. et al., 2023, The CRISM investigation in Mars orbit: Overview, history, and delivered data products: Icarus, p. 115612, doi:10.1016/j.icarus.2023.115612.
+
+\bibitem[Serventi et al.(2015)]{Serventi2015} Serventi, G., Carli, C., and Sgavetti, M., 2015, Spectral variability of plagioclase--mafic mixtures (3): Quantitative analysis applying the MGM algorithm: Icarus, v. 254, p. 34--55, doi:10.1016/j.icarus.2015.03.024.
+
+\bibitem[Serventi et al.(2013)]{Serventi2013} Serventi, G., Carli, C., Sgavetti, M., Ciarniello, M., Capaccioni, F., and Pedrazzi, G., 2013, Spectral variability of plagioclase--mafic mixtures (1): Effects of chemistry and modal abundance in reflectance spectra of rocks and mineral mixtures: Icarus, v. 226, p. 282--298, doi:10.1016/j.icarus.2013.05.041.
+
+\bibitem[Smith et al.(2013)]{Smith2013} Smith, M.R., Bandfield, J.L., Cloutis, E.A., and Rice, M.S., 2013, Hydrated silica on Mars: Combined analysis with near-infrared and thermal-infrared spectroscopy: Icarus, v. 223, p. 633--648, doi:10.1016/j.icarus.2013.01.024.
+
+\bibitem[Smith and Brown(1988)]{Smith1988} Smith, J.V., and Brown, W.L., 1988, Feldspar Minerals: Berlin, Heidelberg, Springer, doi:10.1007/978-3-642-72594-4.
+
+\bibitem[Stolper et al.(2013)]{Stolper2013} Stolper, E.M. et al., 2013, The Petrochemistry of Jake\_M: A Martian Mugearite: Science, v. 341, p. 1239463, doi:10.1126/science.1239463.
+
+\bibitem[Sun and Milliken(2015)]{Sun2015} Sun, V.Z., and Milliken, R.E., 2015, Ancient and recent clay formation on mars as revealed from a global survey of hydrous minerals in crater central peaks: Journal of Geophysical Research: Planets, v. 120, p. 2293--2332, doi:10.1002/2015je004918.
+
+\bibitem[Tornabene et al.(2018)]{Tornabene2018} Tornabene, L.L. et al., 2018, Image Simulation and Assessment of the Colour and Spatial Capabilities of the Colour and Stereo Surface Imaging System (CaSSIS) on the ExoMars Trace Gas Orbiter: Space Science Reviews, v. 214, p. 18, doi:10.1007/s11214-017-0436-7.
+
+\bibitem[Treiman(2025)]{Treiman2025} Treiman, A.H., 2025, The Nakhlite Martian Meteorites are Igneous, but Not Cumulates, \textit{in} Houston, TX, LPI, p. 1472, https://www.hou.usra.edu/meetings/lpsc2025/pdf/1472.pdf.
+
+\bibitem[Udry et al.(2018)]{Udry2018} Udry, A., Gazel, E., and McSween Jr., H.Y., 2018, Formation of Evolved Rocks at Gale Crater by Crystal Fractionation and Implications for Mars Crustal Composition: Journal of Geophysical Research: Planets, v. 123, p. 1525--1540, doi:10.1029/2018JE005602.
+
+\bibitem[Vannier et al.(2024)]{Vannier2024} Vannier, H., Horgan, B., Greenberger, R., and Eddy, M., 2024, Assessing Plagioclase Feldspar Detectability Limits in Whole-Rock VNIR Spectra: Possible Lower Detection Limits and Application to Mars, \textit{in} LPI, https://www.hou.usra.edu/meetings/lpsc2024/pdf/2520.pdf.
+
+\bibitem[Vaughan and Head(2014)]{Vaughan2014} Vaughan, W.M., and Head, J.W., 2014, Impact melt differentiation in the South Pole-Aitken basin: Some observations and speculations: Planetary and Space Science, v. 91, p. 101--106, doi:10.1016/j.pss.2013.11.010.
+
+\bibitem[Vincent and Thomson(1972)]{Vincent1972} Vincent, R.K., and Thomson, F., 1972, Spectral compositional imaging of silicate rocks: Journal of Geophysical Research (1896-1977), v. 77, p. 2465--2472, doi:10.1029/JB077i014p02465.
+
+\bibitem[Viviano et al.(2014)]{Viviano2014} Viviano, C.E. et al., 2014, Revised CRISM spectral parameters and summary products based on the currently detected mineral diversity on Mars: Journal of Geophysical Research: Planets, v. 119, p. 1403--1431, doi:10.1002/2014JE004627.
+
+\bibitem[Viviano et al.(2023)]{Viviano2023} Viviano, C.E., Beck, A.W., Murchie, S.L., Dapremont, A.M., and Seelos, F.P., 2023, Heterogeneity of the Noachian Crust of Mars Using CRISM Multispectral Mapping Data: Geophysical Research Letters, v. 50, p. e2022GL102711, doi:10.1029/2022GL102711.
+
+\bibitem[Viviano and Phillips(2019)]{Viviano2019} Viviano, C.E., and Phillips, M.S., 2019, Hydrothermal Alteration and Large Impact Basins on Mars, \textit{in} Houston, TX, LPI, v. 50th LPSC, p. Abstract \#2824, https://www.hou.usra.edu/meetings/lpsc2019/pdf/2824.pdf.
+
+\bibitem[Viviano-Beck et al.(2017)]{Viviano-Beck2017} Viviano-Beck, C.E., Murchie, S.L., Beck, A.W., and Dohm, J.M., 2017, Compositional and structural constraints on the geologic history of eastern Tharsis Rise, Mars: Icarus, v. 284, p. 43--58, doi:10.1016/j.icarus.2016.09.005.
+
+\bibitem[Walter and Salisbury(1989)]{Walter1989} Walter, L.S., and Salisbury, J.W., 1989, Spectral characterization of igneous rocks in the 8-to 12-\textmu m region: Journal of Geophysical Research: Solid Earth, v. 94, p. 9203--9213.
+
+\bibitem[Wenk and Wilde(1973)]{Wenk1973} Wenk, H.-R., and Wilde, W.R., 1973, Chemical anomalies of lunar plagioclase, described by substitution vectors and their relation to optical and structural properties: Contributions to Mineralogy and Petrology, v. 41, p. 89--104, doi:10.1007/BF00375035.
+
+\bibitem[Wieczorek et al.(2022)]{Wieczorek2022} Wieczorek, M.A. et al., 2022, InSight Constraints on the Global Character of the Martian Crust: Journal of Geophysical Research: Planets, v. 127, p. e2022JE007298, doi:10.1029/2022JE007298.
+
+\bibitem[Wordsworth et al.(2017)]{Wordsworth2017} Wordsworth, R., Kalugina, Y.N., Lokshtanov, S., Vigasin, A.A., Ehlmann, B.L., Head, J.W., Sanders, C., and Wang, H., 2017, Transient reducing greenhouse warming on early mars: Geophysical Research Letters, v. 44, p. 665--671, doi:10.1002/2016gl071766.
+
+\bibitem[Wray et al.(2013)]{Wray2013} Wray, J.J., Hansen, S.T., Dufek, J., Swayze, G.A., Murchie, S.L., Seelos, F.P., Skok, J.R., Irwin, R.P., and Ghiorso, M.S., 2013, Prolonged magmatic activity on Mars inferred from the detection of felsic rocks: Nature Geoscience, v. 6, p. 1013--1017, doi:10.1038/ngeo1994.
+
+\end{thebibliography}
+\newpage
+
+% Include figure commands with placeholders for the figures
+\begin{figure}
+    \centering
+    \label{fig:global_distribution}
+    \includegraphics[width=\textwidth]
+    {figures/01_Global_Context.png}
+    \caption{Top panel shows the global distribution of outcrops showing a plagioclase absorption feature in visible to near-infrared reflectance spectra. Results from this study in the circum-Argyre region are shown as yellow squares. Bottom left panel shows an example of possible layering between dark and light-toned units (HiRISE scene ESP\_020799\_1385). Bottom right panel shows an example light-toned massive textured outcrops with plagioclase reflectance signatures (yellow dots, mint green = alteration $\pm$ plagioclase) from the CTX global mosaic \citep{Dickson2018}.}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]
+    {figures/02_Argyre_Minerals_Context_v2.png}
+    \caption{Detections of high-Ca pyroxene + Olivine, type 1 and 2 olivine, plagioclase, and low-Ca pyroxene made with CRISM MRDR v4 data. The bottom right panel shows the spatial distribution of each category as a function of radial distance from the basin center binned at 20 km intervals. The top histogram is normalized to the area of geological units from \citet{Dohm2015} investigated within each ring, and the bottom histogram is normalized by the total area of detections with each ring to elucidate relative trends in the data.}
+    \label{fig:detections}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]
+    {figures/03_spectra_figv3.png}
+    \caption{Reflectance and emissivity spectral character of outcrops surrounding Argyre. A) Average CRISM spectra (ratioed I/F, offset for clarity) for each category separated by low (L), moderate (M) and high (H) confidence based on absorption strength and clarity. B) Weighted absorption center (WAC) and cubic spline fit minimum (CSFM) values calculated on THEMIS-convolved reference library data (see methods for details) of felsic, intermediate, mafic, ultramafic, gabbroic, anorthositic, and pyroxenitic rocks. Anorthositic and gabbroic rocks show a trend of higher CSFM values compared to WAC values and pyroxenitic and ultramafic rocks tend to have closer to 1:1 correspondence between CSFM and WAC values. C) WAC and CSFM values calculated on ROIs detected with CRISM (THEMIS IDs: I09614002, I09639003, I17888007, I18025006) with regions from reference library spectra for interpretation. Outcrops show the highest overlap with intermediate, gabbroic, and anorthositic compositions.}
+    \label{fig:spectra}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]
+    {figures/04_crust_strat_sketch_v2.png}
+    \caption{Conceptual model for the pre-Noachian crust exposed by the Argyre impact. A primitive source of possible lherzolitic or wehrlitic composition produces basaltic melt extracts that undergo fractional crystallization at lower pressures to form layered-mafic-intrusion style complexes, likely containing oxide and spinel horizons. Low-Ca pyroxene rich volcanics form a secondary upper crust.}
+    \label{fig:concept_sketch}
+\end{figure}
+
+\end{document}
