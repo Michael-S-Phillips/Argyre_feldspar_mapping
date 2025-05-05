@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 MAY 2025 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  1 MAY 2025 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count196
 \c@section=\count197
@@ -354,12 +354,12 @@ LaTeX Font Info:    ... okay on input line 29.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -408,9 +408,9 @@ Package caption Info: End \AtBeginDocument code.
 
 [4]
 
-[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[5]
 
-[6]
+[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [7]
 
@@ -420,9 +420,9 @@ Package caption Info: End \AtBeginDocument code.
 
 [10]
 
-[11] (./argyre_feldspar_paper_v4.bbl
+[11]
 
-[12]
+[12] (./argyre_feldspar_paper_v4.bbl
 
 [13]
 
@@ -436,38 +436,42 @@ Package caption Info: End \AtBeginDocument code.
 
 [18]
 
-[19])
+[19]
 
 [20]
-<figures/01_Global_Context.png, id=660, 469.755pt x 433.62pt>
+
+[21])
+
+[22]
+<figures/01_Global_Context.png, id=673, 469.755pt x 433.62pt>
 File: figures/01_Global_Context.png Graphic file (type png)
 <use figures/01_Global_Context.png>
 Package pdftex.def Info: figures/01_Global_Context.png  used on input line 179.
 (pdftex.def)             Requested size: 469.75502pt x 433.61894pt.
-<figures/02_Argyre_Minerals_Context_v2.png, id=665, 471.4413pt x 320.6379pt>
+<figures/02_Argyre_Minerals_Context_v2.png, id=678, 471.4413pt x 320.6379pt>
 File: figures/02_Argyre_Minerals_Context_v2.png Graphic file (type png)
 <use figures/02_Argyre_Minerals_Context_v2.png>
 Package pdftex.def Info: figures/02_Argyre_Minerals_Context_v2.png  used on input line 187.
 (pdftex.def)             Requested size: 469.75502pt x 319.49223pt.
-<figures/03_spectra_figv3.png, id=670, 602.7318pt x 431.9337pt>
+<figures/03_spectra_figv3.png, id=683, 602.7318pt x 431.9337pt>
 File: figures/03_spectra_figv3.png Graphic file (type png)
 <use figures/03_spectra_figv3.png>
 Package pdftex.def Info: figures/03_spectra_figv3.png  used on input line 195.
 (pdftex.def)             Requested size: 469.75502pt x 336.6433pt.
-<figures/04_crust_strat_sketch_v2.png, id=672, 426.1521pt x 290.2845pt>
+<figures/04_crust_strat_sketch_v2.png, id=685, 426.1521pt x 290.2845pt>
 File: figures/04_crust_strat_sketch_v2.png Graphic file (type png)
 <use figures/04_crust_strat_sketch_v2.png>
 Package pdftex.def Info: figures/04_crust_strat_sketch_v2.png  used on input line 203.
 (pdftex.def)             Requested size: 469.75502pt x 320.00491pt.
 
 
-[21 <./figures/01_Global_Context.png (PNG copy)>]
+[23 <./figures/01_Global_Context.png (PNG copy)>]
 
-[22 <./figures/02_Argyre_Minerals_Context_v2.png (PNG copy)>]
+[24 <./figures/02_Argyre_Minerals_Context_v2.png (PNG copy)>]
 
-[23 <./figures/03_spectra_figv3.png>]
+[25 <./figures/03_spectra_figv3.png>]
 
-[24 <./figures/04_crust_strat_sketch_v2.png>] (./argyre_feldspar_paper_v4.aux)
+[26 <./figures/04_crust_strat_sketch_v2.png>] (./argyre_feldspar_paper_v4.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -476,18 +480,18 @@ Package rerunfilecheck Info: File `argyre_feldspar_paper_v4.out' has not changed
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12636 strings out of 473190
- 201572 string characters out of 5715801
- 618702 words of memory out of 5000000
+ 12637 strings out of 473190
+ 201580 string characters out of 5715801
+ 617702 words of memory out of 5000000
  35582 multiletter control sequences out of 15000+600000
- 565900 words of font info for 60 fonts, out of 8000000 for 9000
+ 566121 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1687b,794s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on argyre_feldspar_paper_v4.pdf (24 pages, 6176784 bytes).
+ 75i,10n,79p,1687b,784s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on argyre_feldspar_paper_v4.pdf (26 pages, 6152147 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 719 compressed objects within 8 object streams
+ 175 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
