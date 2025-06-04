@@ -2,7 +2,7 @@
 
 ## Repository Overview
 
-This repository contains the submission materials for the manuscript titled **"Ancient Anorthositic Complexes: Widespread in Lower Martian Crust"**, intended for publication in 2025. The materials are organized to facilitate review and reproducibility.
+This repository contains the submission materials for the manuscript titled **"Ancient Anorthosites on Mars: Widespread in the Lower Crust"**, intended for publication in 2025. The materials are organized to facilitate review and reproducibility.
 
 ## Contents
 
