@@ -6,6 +6,7 @@
 \usepackage{booktabs}
 \usepackage{csvsimple}
 \usepackage{geometry}
+\usepackage{xcolor} % Added for \textcolor
 \usepackage{textcomp} % Use textcomp for \micro and \perthousand
 \usepackage{gensymb} % Use gensymb for \degree
 \DeclareRobustCommand{\micro}{\textmu} % Define \micro if needed
@@ -43,83 +44,70 @@
 
 \begin{figurehere}
     \includegraphics[width=\textwidth]{extended_data/ED1_impact_model.png}
-    \caption[iSALE3D impact model results.]{Excavation depth of material from an iSALE3D model run for a NE to SW trending impact with an impact angle of 45\degree. A) Excavated mantle material is expected for an impact as large as the one that formed Argyre. B) Distribution of excavated crustal material. Materials with a deeper provenance are plotted on top of materials with shallower provenance to highlight the extent of excavation of deep material. C) Same data as in B overlain on the Argyre basin. This simulation shows that mantle materials were likely excavated by the Argyre-forming impact.}
+     \caption[iSALE3D impact model results.]{Excavation depth of material from an iSALE3D model run for a NE to SW trending impact with an impact angle of 45\degree. \textcolor{red}{The origin point on the graph indicates the impact site, which for an oblique impact is different from the center of the resulting basin.} A) \textcolor{red}{The distribution of excavated material from a depth $>$60 km, shown in gray}. Excavated mantle material is expected for an impact as large as the one that formed Argyre. B) Distribution of excavated crustal material. Materials with a deeper provenance are plotted on top of materials with shallower provenance to highlight the extent of excavation of deep material. C) Same data as in B overlain on the Argyre basin \textcolor{red}{(map tick labels in units of meters)}. This simulation shows that mantle materials were likely excavated by the Argyre-forming impact \textcolor{red}{and that, in general, deeper material is concentrated downrange (SW) and closer to the basin center while shallower material is uprange (NE) more distal.}}
     \label{fig:extended_data_figure1}
 \end{figurehere}
 
 \clearpage
 \begin{figurehere}
-    \includegraphics[width=\textwidth]{extended_data/ED2_argyre_roi_statistical_analysis_results.png}
-    \caption[Statistics of the distribution of minerals around Argyre.]{Results of statistical analyses on the distribution of minerals around Argyre. A) Spatial distribution of minerals with marker size proportional to the area of each region of interest. B) The distribution of primary igneous minerals in the Argyre basin presented as violin plots. Gray circles and white bars represent the center of mass estimates with 95\% confidence intervals, respectively. C) Spatial permutation test (aka Monte Carlo permutation test) for differences among ``centers of mass" (i.e., area-weighted distance from the Argyre center). Significantly different pairs are indicated by *** D) Kolmogorov-Smirnov two-sided test results for differences in the distribution of primary igneous minerals. We reject the null hypothesis that two mineral categories are drawn from the same distribution if the p-value is less than the Bonferroni-corrected threshold of 0.05/10 = 0.005. The *** symbol indicates significant differences.} 
+    \includegraphics[width=\textwidth]{extended_data/ED2_azimuthal_hist_binning.png}
+    \caption[\textcolor{red}{Histograms of mineral distributions around Argyre.}]{\textcolor{red}{Histograms of mineral distributions around Argyre, binned by radial distance as in Figure 2 of the main text and sectioned by azimuthal angle. Colors follow the scheme from figures in the main text. The gray units are uplifted materials from Dohm et al., (2015). The impact that formed the Argyre basin likely struck at an oblique angle, ejecting material in an asymmetric distribution with deeper sourced material concentrated downrange (c.f., Extended Data Figure 1). Histograms sectioned azimuthally (starting with 0\degree and increasing in 45\degree increments) show the variation in mineral abundance with respect to the impact direction. Olivine-bearing materials are concentrated downrange whereas LCP is more abundant uprange. This distribution supports the circumfrentially averaged histograms in Figure 2 of the main text showing that, in general, spectrally feldspathic outcrops occur stratigraphically above and alongside olivine-bearing outcrops and below low calcium pyroxene-bearing rocks.}} 
     \label{fig:extended_data_figure2}
 \end{figurehere}
 
 \clearpage
 \begin{figurehere}
-    \includegraphics[width=\textwidth]{extended_data/ED3_hirise_morphologies.png}
-    \caption[Layered and massive textured feldspathic outcrops in HiRISE and CTX images.]{Layered and massive textured feldspathic outcrops in HiRISE (top left, middle, bottom left) and CTX images (top right, bottom right). The bottom right CTX image shows an example of "mega breccia" morphology, with both blocky/angular and rounded light-toned blocks surrounded by darker-toned material.}
-    \label{fig:extended_data_figure2}
-\end{figurehere}
-
-\clearpage
-
-\begin{figurehere}
-    \includegraphics[width=\textwidth]{extended_data/ED4_local_relationships.png}
-    \caption[Results of a graph network analysis on the local context of primary igneous minerals.]{Results of a graph network analysis on the local context ($\leq$ 5km) of primary igneous minerals surrounding the Argyre basin. A) Symmetric co-occurrence matrix among the 5 categories of interest for this study: olivine + HCP (purple), LCP (cyan), plagioclase (yellow), type 1 olivine (green) and type 2 olivine (red). B) Results from Tukey's HSD test (performed after a one-way ANOVA) showing the relative elevation (x-axis) for each category compared to its neighbors. The 95\% confidence intervals (horizontal bars) for each category intersect zero except for plagioclase, which is approximately 200 m above its neighboring outcrops on average. C) Example connections (orange lines) among outcrops (dots) in the graph network. Line thickness is inversely proportional to outcrop distance. Dot colors correspond to the same category colors as in A and B.}
+    \includegraphics[width=\textwidth]{extended_data/ED3_argyre_roi_statistical_analysis_results.png}
+    \caption[Statistics of the distribution of minerals around Argyre.]{Results of statistical analyses on the distribution of minerals around Argyre. A) Spatial distribution of minerals with marker size proportional to the area of each region of interest. B) The distribution of primary igneous minerals in the Argyre basin presented as violin plots. Gray circles and white bars represent the center of mass estimates with 95\% confidence intervals, respectively. C) Spatial permutation test (aka Monte Carlo permutation test) for differences among ``centers of mass" (i.e., area-weighted distance from the Argyre center). \textcolor{red}{This test addresses whether the centers of mass are significantly different.} Significantly different pairs are indicated by *** D) Kolmogorov-Smirnov two-sided test results for differences in the distribution of primary igneous minerals. We reject the null hypothesis that two mineral categories are drawn from the same distribution if the p-value is less than the Bonferroni-corrected threshold of 0.05/10 = 0.005. The *** symbol indicates significant differences.} 
     \label{fig:extended_data_figure3}
 \end{figurehere}
 
 \clearpage
 
 \begin{figurehere}
-    \includegraphics[width=0.9\textwidth]{extended_data/ED5_hirise_color_params.png}
-    \caption[Band ratio plots for plagioclase and mafic minerals.]{Band ratio plots showing high IR/BG and IR/Red ratio values for plagioclase compared to same-scene mafic minerals.}
+    \includegraphics[width=0.9\textwidth]{extended_data/ED4_olivine_hcp_spec_fig.png}
+    \caption[Comparison of Olivine + HCP category to library reference data.]{Comparison of the CRISM Olivine + HCP category to library reference data from RELAB. Our categorization label implies the lithology may be lherzolite/wehrlite/gabbro (olivine + high-calcium pyroxene ± plagioclase; compare to olivine gabbro lunar meteorite and lherzolite reference spectra). An alternative interpretation may be chromite or spinel-bearing troctolite compositions (plagioclase + olivine + chromite/spinel). RELAB IDs used for this plot: sa2ls8 (chromite- and spinel-bearing troctolite returned lunar sample), camt313 (olivine gabbro lunar meteorite), and c1jg15 (synthetic spinel-bearing troctolite).}
     \label{fig:extended_data_figure4}
 \end{figurehere}
 
 \clearpage
-
 \begin{figurehere}
-    \includegraphics[width=0.9\textwidth]{extended_data/ED6_hirise_color_images.png}
-    \caption[HiRISE data and ROIs used for band ratio plots.]{HiRISE data and ROIs used to create plots in Extended Data Fig. 4. In the parameter images displayed on the right, yellow tends to indicate more plagioclase-rich materials, and blue tends to indicate more mafic materials.}
+    \includegraphics[width=\textwidth]{extended_data/ED5_hirise_morphologies.png}
+    \caption[Layered and massive textured feldspathic outcrops in HiRISE and CTX images.]{Layered and massive textured feldspathic outcrops in HiRISE (top left, middle, bottom left) and CTX images (top right, bottom right). The bottom right CTX image shows an example of "mega breccia" morphology, with both blocky/angular and rounded light-toned blocks surrounded by darker-toned material.}
     \label{fig:extended_data_figure5}
 \end{figurehere}
 
 \clearpage
 
 \begin{figurehere}
-    \includegraphics[width=0.9\textwidth]{extended_data/ED7_olivine_hcp_spec_fig.png}
-    \caption[Comparison of Olivine + HCP category to library reference data.]{Comparison of the CRISM Olivine + HCP category to library reference data from RELAB. Our categorization label implies the lithology may be lherzolite/wehrlite/gabbro (olivine + high-calcium pyroxene ± plagioclase; compare to olivine gabbro lunar meteorite and lherzolite reference spectra). An alternative interpretation may be chromite or spinel-bearing troctolite compositions (plagioclase + olivine + chromite/spinel). RELAB IDs used for this plot: sa2ls8 (chromite- and spinel-bearing troctolite returned lunar sample), camt313 (olivine gabbro lunar meteorite), and c1jg15 (synthetic spinel-bearing troctolite).}
+    \includegraphics[width=\textwidth]{extended_data/ED6_local_relationships.png}
+    \caption[Results of a graph network analysis on the local context of primary igneous minerals.]{Results of a graph network analysis on the local context ($\leq$ 5km) of primary igneous minerals surrounding the Argyre basin. A) Symmetric co-occurrence matrix among the 5 categories of interest for this study: olivine + HCP (purple), LCP (cyan), plagioclase (yellow), type 1 olivine (green) and type 2 olivine (red). B) Results from Tukey's HSD test (performed after a one-way ANOVA) showing the relative elevation (x-axis) for each category compared to its neighbors. The 95\% confidence intervals (horizontal bars) for each category intersect zero except for plagioclase, which is approximately 200 m above its neighboring outcrops on average. C) Example connections (orange lines) among outcrops (dots) in the graph network. Line thickness is inversely proportional to outcrop distance. Dot colors correspond to the same category colors as in A and B.}
     \label{fig:extended_data_figure6}
 \end{figurehere}
 
 \clearpage
 
 \begin{figurehere}
-    \includegraphics[width=0.9\textwidth]{extended_data/ED8_olivine_cat_spec_fig.png}
-    \caption[Results from Type 1 and Type 2 olivine categorization method.]{Results from Type 1 and Type 2 olivine categorization method. Band center, band depth, slope between 1000 and 1300 nm, full width at half maximum, and band asymmetry were used to categorize the olivine detections. We performed a PCA followed by k-means clustering to assign the category labels. Dashed lines are MICA library "Mg" (green) and "Fe" (red) spectra, which correspond to Type 1 and Type 2 olivine respectively. Solid lines are the average spectra for each category attained after PCA and k-means.}
+    \includegraphics[width=0.9\textwidth]{extended_data/ED7_hirise_color_params.png}
+    \caption[Band ratio plots for plagioclase and mafic minerals.]{Band ratio plots showing low BG/IR and Red/IR ratio values for plagioclase compared to same-scene mafic minerals.}
     \label{fig:extended_data_figure7}
 \end{figurehere}
 
-% Extended Data Tables
-% Uncomment this section if you need the tables
-% \clearpage
-% \vspace*{\fill}
-% \section*{\centering Extended Data Tables}
-% \vspace*{\fill}
-% 
-% \clearpage
-% \begin{longtable}{@{}llllllll@{}}
-% \caption{Caption for Extended Data Table 1.} \\
-% \toprule
-% Tile Number & Type 1 olivine & Type 2 olivine & plagioclase & lcp & hcp + olivine & Note \\ \midrule
-% \endfirsthead
-% \toprule
-% Tile Number & Type 1 olivine & Type 2 olivine & plagioclase & lcp & hcp + olivine & Note \\ \midrule
-% \endhead 
-% \csvreader[head to column names]{extended_data/ED_Table1_categorized_summary.csv}{}%
-% {\\\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii} \\
-% \bottomrule
-% \end{longtable}
+\clearpage
+
+\begin{figurehere}
+    \includegraphics[width=0.9\textwidth]{extended_data/ED8_hirise_color_images.png}
+    \caption[HiRISE data and ROIs used for band ratio plots.]{HiRISE data and ROIs used to create plots in Extended Data Fig. 7. In the parameter images displayed on the right, yellow tends to indicate more plagioclase-rich materials, and blue tends to indicate more mafic materials.}
+    \label{fig:extended_data_figure8}
+\end{figurehere}
+
+\clearpage
+
+\begin{figurehere}
+    \includegraphics[width=0.9\textwidth]{extended_data/ED9_olivine_cat_spec_fig.png}
+    \caption[Results from Type 1 and Type 2 olivine categorization method.]{Results from Type 1 and Type 2 olivine categorization method. Band center, band depth, slope between 1000 and 1300 nm, full width at half maximum, and band asymmetry were used to categorize the olivine detections. We performed a PCA followed by k-means clustering to assign the category labels. Dashed lines are MICA library "Mg" (green) and "Fe" (red) spectra, which correspond to Type 1 and Type 2 olivine respectively. Solid lines are the average spectra for each category attained after PCA and k-means.}
+    \label{fig:extended_data_figure9}
+\end{figurehere}
+
 
 \end{document}
